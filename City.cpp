@@ -1,27 +1,14 @@
+// ================= City.cpp =================
 #include "City.h"
 #include <iostream>
+using namespace std;
 
-City::City() {
-    name = "Unknown";
+
+City::City(string name) {
+cityName = name;
 }
 
-City::City(const std::string& cityName) {
-    name = cityName;
-}
 
-void City::addLocation(const std::string& location) {
-    locations.push_back(location);
-}
-
-void City::displayLocations() const {
-    std::cout << "City: " << name << std::endl;
-    std::cout << "Locations:" << std::endl;
-
-    for (const std::string& loc : locations) {
-        std::cout << "- " << loc << std::endl;
-    }
-}
-
-std::string City::getName() const {
-    return name;
+void City::displayCity() {
+cout << "City Initialized: " << cityName << endl;
 }
