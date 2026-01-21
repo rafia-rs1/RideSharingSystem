@@ -1,22 +1,16 @@
+// ================= City.h =================
 #ifndef CITY_H
 #define CITY_H
-
 #include <string>
-#include <vector>
+using namespace std;
+
 
 class City {
-private:
-    std::string name;
-    std::vector<std::string> locations;
-
+string cityName;
 public:
-    City();
-    City(const std::string& cityName);
-
-    void addLocation(const std::string& location);
-    void displayLocations() const;
-
-    std::string getName() const;
+City(string name);
+void displayCity();
 };
+
 
 #endif
